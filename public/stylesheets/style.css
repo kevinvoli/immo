@@ -1,0 +1,65 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* header */
+
+.numero{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  background-color: aqua;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.telephone p{
+  display: inline-block;
+  font-size: small;
+
+}
+
+.navbar{
+  display: flex;
+  flex-flow: row wrap;
+}
+.navbar .navbar-link ul{
+  list-style-type: none;
+  margin: 0;
+  padding: O;
+}
+.navbar-link ul ul{
+  display: none;
+  
+  width: 100px;
+}
+.navbar-link ul ul li a{
+  text-align: left;
+}
+.navbar-link ul li{
+  float: left;
+  list-style: none;
+
+}
+.navbar-link li{
+ 
+}
+.navbar-link li a {
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+  padding: 4px 0;
+  display: block;
+  width: 100px;
+  text-align: center;
+
+}
+ul.niveau1 li.service:hover .noveau2 {
+  background-color: black;
+  display: block;
+}
+li:hover{
+  background-color: rgb(32, 107, 13);
+}
