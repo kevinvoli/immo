@@ -6,6 +6,9 @@
 }
 
 /* header */
+header{
+  margin-bottom: 50px;
+}
 
 .numero{
   display: flex;
@@ -21,27 +24,53 @@
   font-size: small;
 
 }
+.menu{
+  position: relative;
+  background-color: rgba(48, 124, 190, 0.096);
+  width: 100vw;
+  height: 100vh;
+}
 
 .navbar{
+  position:sticky;
+  top: 0;
+  left: 0;
   display: flex;
+  width: 100%;
+  height: 50px;
   flex-flow: row wrap;
+  background-color:rgba(240, 248, 255, 0.082);
+  z-index: 4;
+  font-size:medium;
+
 }
 .navbar .navbar-link ul{
   list-style-type: none;
   margin: 0;
   padding: O;
 }
+.navbar-link li.service{
+  position: relative;
+}
+
 .navbar-link ul ul{
   display: none;
-  
+  position: absolute;
+  left: 0;
   width: 100px;
 }
 .navbar-link ul ul li a{
-  text-align: left;
+  text-align: center;
 }
 .navbar-link ul li{
+  font-size: medium;
+  border: 2px white solid;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
   float: left;
   list-style: none;
+  
 
 }
 .navbar-link li{
@@ -49,17 +78,65 @@
 }
 .navbar-link li a {
   text-decoration: none;
-  color: rgb(2, 2, 2);
+  color: white;
   padding: 4px 0;
   display: block;
   width: 100px;
   text-align: center;
+  font-weight: bold;
 
 }
 ul.niveau1 li.service:hover .noveau2 {
-  background-color: black;
   display: block;
 }
 li:hover{
-  background-color: rgb(32, 107, 13);
+  background-color: white;
+  color: black;
+}
+
+.banier{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.banier-video{
+  width: 100%;
+  height: auto;
+}
+
+.presentation{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+
+
+
+.banier-footer{
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.banier-footer .footer-link{
+  width: 200px;
+  height: 100%;
+  background-color: aqua;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.copy{
+  height: 50px;
+  text-align: center;
+  background-color: black;
+  color: rgb(192, 187, 187);
+  padding: 10px;
 }
