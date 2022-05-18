@@ -47,8 +47,45 @@
           <video id="video" class="banier-video" loop muted="" autoplay="" playsinline="" preload="auto" >
             <source src="/videos/videos.mp4" type="video/mp4">
           </video>
+         
         </div>
         <div class="overlay"></div>
+        <div class="recherche container">
+          <form action="">
+            <div class="contain-recherche">
+              <div>
+                <select name="typeBien" id="typeBien">
+                  <option selected="" disabled="">Type de bien</option>
+                  <option value="1">Apartement</option>
+                  <option value="2">Bureau</option>
+                  <option value="3">Terein</option>
+                  <option value="4">Villa</option>
+                  <option value="5">Equipé</option>
+                </select>
+              </div>
+              <div>
+                <select name="Ville" id="ville">
+                  <option selected="" disabled="">Villes</option>
+                  <option value="1">Abidjan</option>
+                  <option value="2">Bouake</option>
+                  <option value="3">Daloa</option>
+                </select>
+              </div>
+              <div>
+                <input type="text" name="nbrpierce" placeholder="nombre de peirce">
+              </div>
+              <div>
+                <input type="text" name="budget" id="budget" placeholder="Budget en FCFA">
+              </div>
+              <div>
+                <button class="button-search" type="submit" name="send" >
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+              
+            </div>
+          </form>
+        </div>
         <div class="presentation">
           <p>
             <h1>Agence immobilier</h1>
@@ -77,7 +114,6 @@
                 <div class="info-text"><h4>Vente</h4></div>
               </div>
             </a>
-            s
             <a href="#">
               <div class="info">
                 <div class="info-icon"></div>
